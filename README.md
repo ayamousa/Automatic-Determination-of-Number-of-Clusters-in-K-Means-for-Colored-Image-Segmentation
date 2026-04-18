@@ -148,20 +148,7 @@ pip install opencv-python numpy matplotlib openpyxl
 
 ## 📬 Citation
 
-If you use this code or results in your research, please cite:
-
-```bibtex
-@article{yourname2025segmentation,
-  title   = {Automatic Determination of Number of Clusters in K-Means for 
-             Colored Image Segmentation using PCA Eigen Vectors and 
-             Weighted Color Channel Variance},
-  author  = {Your Name},
-  journal = {Journal Name},
-  year    = {2025}
-}
-```
-
----
+If you use this code or results in your research, please cite it : 
 
 ## 📄 License
 
