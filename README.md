@@ -9,7 +9,7 @@
 
 ## 📌 Overview
 
-This project presents a novel method for **automatically determining the optimal number of clusters `k`** in K-Means clustering for **colored image segmentation**. The approach leverages **PCA Eigen Vectors** and **Weighted Color Channel Variance** in the **CIE Lab color space** to eliminate the need for manual cluster selection.
+This project presents a novel method for **automatically determining the optimal number of clusters `k`** in K-Means clustering for **colored image segmentation**. The approach leverages **PCA Eigen Vectors** and **Weighted Colour Channel Variance** in the **three colour spaces LAB, HSV,RGB** to eliminate the need for manual cluster selection.
 
 Segmentation quality is evaluated using standard metrics: **Precision**, **Recall**, and **F-Measure**, computed against human-annotated ground truth masks.
 
@@ -37,7 +37,7 @@ The method was evaluated on **43 test images**, each with **5 ground truth annot
 Images are converted from **RGB → CIE Lab** color space to improve perceptual uniformity and clustering performance.
 
 ### 2. Automatic k Determination (Core Contribution)
-The function `FindOptimalk_AB(img_idx)` automatically estimates the optimal number of clusters `k` for each image using:
+The function `FindOptimalk_xxB(img_idx)` automatically estimates the optimal number of clusters `k` for each image using:
 - **PCA Eigen Vectors** — to capture dominant directions of color variance in the image
 - **Weighted Color Channel Variance** — to weight the contribution of each Lab channel (L*, a*, b*) based on its discriminative power
 
@@ -90,7 +90,7 @@ This work uses the publicly available **Berkeley Segmentation Data Set 500 (BSDS
 | Property | Details |
 |----------|---------|
 | **Dataset** | BSDS500 |
-| **Test Images Used** | 43 images |
+| **Test Images Used** | 40 images |
 | **Ground Truth Masks** | 5 human annotations per image (215 masks total) |
 | **Image Size** | 321 × 481 pixels |
 | **Color Space Used** | CIE Lab |
