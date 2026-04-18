@@ -72,14 +72,6 @@ Quantitative results for all 43 images are stored in [`segmentation_metrics.xlsx
 
 Sample results:
 
-| Image # | Clusters (k) | Precision | Recall | F-Measure |
-|---------|-------------|-----------|--------|-----------|
-| 1 | 3 | 0.XXXX | 0.XXXX | 0.XXXX |
-| 2 | 4 | 0.XXXX | 0.XXXX | 0.XXXX |
-| ... | ... | ... | ... | ... |
-| **Average** | — | **0.XXXX** | **0.XXXX** | **0.XXXX** |
-
-> Replace `0.XXXX` with your actual results before submission.
 
 ---
 
