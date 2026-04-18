@@ -13,7 +13,7 @@ This project presents a novel method for **automatically determining the optimal
 
 Segmentation quality is evaluated using standard metrics: **Precision**, **Recall**, and **F-Measure**, computed against human-annotated ground truth masks.
 
-The method was evaluated on **43 test images**, each with **5 ground truth annotations**, following standard benchmarking protocols used in the image segmentation literature.
+The method was evaluated on **40 test images**, each with **5 ground truth annotations**, following standard benchmarking protocols used in the image segmentation literature.
 
 ---
 
