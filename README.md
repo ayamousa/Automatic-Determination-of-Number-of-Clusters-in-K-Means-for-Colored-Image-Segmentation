@@ -13,7 +13,7 @@ This project presents a novel method for **automatically determining the optimal
 
 Segmentation quality is evaluated using standard metrics: **Precision**, **Recall**, and **F-Measure**, computed against human-annotated ground truth masks.
 
-The method was evaluated on **43 test images**, each with **5 ground truth annotations**, following standard benchmarking protocols used in the image segmentation literature.
+The method was evaluated on **40 test images**, each with **5 ground truth annotations**, following standard benchmarking protocols used in the image segmentation literature.
 
 ---
 
@@ -39,7 +39,7 @@ Images are converted from **RGB → CIE Lab** color space to improve perceptual 
 ### 2. Automatic k Determination (Core Contribution)
 The function `FindOptimalk_xxB(img_idx)` automatically estimates the optimal number of clusters `k` for each image using:
 - **PCA Eigen Vectors** — to capture dominant directions of color variance in the image
-- **Weighted Color Channel Variance** — to weight the contribution of each Lab channel (L*, a*, b*) based on its discriminative power
+- **Weighted Color Channel Variance** — to weight the contribution of each Lab channel in each color space such as (L*, a*, b*) based on its discriminative power
 
 This eliminates the need for manual `k` selection, making the method fully automatic.
 
