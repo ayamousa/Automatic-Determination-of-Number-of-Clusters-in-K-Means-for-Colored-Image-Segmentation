@@ -63,7 +63,7 @@ Each segmented image is compared against **5 ground truth masks** per image. Met
 
 ## 📊 Results
 
-Quantitative results for all 43 images are stored in [`segmentation_metrics.xlsx`](segmentation_metrics.xlsx), including:
+Quantitative results for all 40 images are stored in [`segmentation_metrics.xlsx`](segmentation_metrics.xlsx), including:
 
 - Image index
 - Optimal number of clusters `k`
